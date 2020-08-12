@@ -38,9 +38,8 @@ pipeline {
     }
     stage('Deploy') {
       when { branch "master" }
-        steps {
-          sh 'Echo "On master branch"'
-        }
+      steps {
+        sh 'Echo "On master branch"'
       }
     }
   }
