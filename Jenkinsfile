@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment { 
+    docker_username = "frederikam"
+  }
   stages {
     stage('Parallel Execution') {
       parallel {
@@ -23,6 +26,5 @@ pipeline {
 
       }
     }
-
   }
 }
